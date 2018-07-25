@@ -1,4 +1,4 @@
-val xList: List[Int]  = List(115,23,45,478,658,10,23,85)
+val list = List(32,115,23,1,52,28)
 
 var smallestNum= xList(1);
 
@@ -11,7 +11,7 @@ println(smallestNum);
 
 --------------------------------------------------
 
-val xList: List[Int]  = List(115,23,45,478,658,10,23,85)
+val list = List(32,115,23,1,52,28)
 
 var smallestNum= xList(1);
 var biggestNum= xList(1);
@@ -28,3 +28,21 @@ xList.foreach(s=>
 );
 
 println(biggestNum - smallestNum);
+
+--------------------------------------------
+
+val list = List(32,115,23,1,52,28)
+
+def max(xList: List[Int]) : Int = { 
+	return xList.min 
+}
+
+def dif(xList: List[Int]) : Int = { 
+	return xList.max - xList.min 
+}
+
+
+
+
+
+
