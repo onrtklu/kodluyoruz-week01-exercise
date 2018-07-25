@@ -1,0 +1,30 @@
+val xList: List[Int]  = List(115,23,45,478,658,10,23,85)
+
+var smallestNum= xList(1);
+
+xList.foreach(s=>
+	if(s< smallestNum) 	{
+		smallestNum = s;
+	});
+
+println(smallestNum);
+
+--------------------------------------------------
+
+val xList: List[Int]  = List(115,23,45,478,658,10,23,85)
+
+var smallestNum= xList(1);
+var biggestNum= xList(1);
+
+xList.foreach(s=>
+
+	if(s< smallestNum) {
+		smallestNum = s;
+	} 
+	else if(s> biggestNum) {
+		biggestNum = s;
+	}
+
+);
+
+println(biggestNum - smallestNum);
